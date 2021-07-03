@@ -1,0 +1,40 @@
+name: build-docs
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+            submodules: true
+            fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+            hugo-version: 'latest'
+
+      - name: delete docs
+        run: rm -rf docs
+
+      - name: build docs
+        run: hugo
+        working-directory: hugo
+
+      - name: Create cname file
+        run: echo 'www.totalgeek.info' > docs/CNAME
+
+      - name: Commit docs
+        run: |
+          git config --global user.name 'aream2006'
+          git config --global user.email 'aream2006@users.noreply.github.com'
+          git add docs/
+          git status
+          git commit -am "build docs"
+          git push origin HEAD:$GITHUB_HEAD_REF
