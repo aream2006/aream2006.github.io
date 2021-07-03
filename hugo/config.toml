@@ -10,7 +10,7 @@ paginate  = 10
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
-googleAnalytics = "G-FBYG2F02BD"
+googleAnalytics = "G-LVJ9KVG4XV"
 # disqusShortname = ""
 
 archetypeDir = "archetypes"
@@ -164,10 +164,6 @@ disableHugoGeneratorInject = false
   [[params.social]]
     name = "reddit"
     url = "https://www.reddit.com/user/aream06"
-
-  [[params.social]]
-    name = "case"
-    url = "https://www.realpage.com"
 
 [languages]
   [languages.en]
