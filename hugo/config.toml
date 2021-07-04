@@ -6,10 +6,10 @@ paginate     = 10
 publishDir   = "../docs"
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
+  dateform        = "January 2, 2006"
+  dateformShort   = "January 2"
+  dateformNum     = "January 2, 2006"
+  dateformNumTime = "January 2, 2006 3:04 PM"
 
   # Subtitle for home
   homeSubtitle = "DevOps Engineer"
