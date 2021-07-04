@@ -23,6 +23,10 @@ jobs:
       - name: delete docs
         run: rm -rf docs
 
+      - name: add analytics
+        run: |
+          echo googleAnalytics = "G-LVJ9KVG4XV" >> config.toml
+
       - name: build docs
         run: hugo
         working-directory: hugo
