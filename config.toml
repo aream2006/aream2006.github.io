@@ -1,0 +1,59 @@
+baseurl      = "https://www.totalgeek.info"
+title        = "Alan Ream"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+paginate     = 10
+googleAnalytics = "G-LVJ9KVG4XV"
+
+[params]
+  dateform        = "January 2, 2006"
+  dateformShort   = "January 2"
+  dateformNum     = "January 2, 2006"
+  dateformNumTime = "January 2, 2006 3:04 PM"
+
+  # Subtitle for home
+  homeSubtitle = "DevOps Engineer"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+
+[params.logo]
+  logoMark     = "$"
+  logoText     = "cd /home/"
+  logoHomeLink = "/"
+  # Set true to remove the logo cursor entirely.
+  logoCursorDisabled = false
+  # Set to a valid CSS color to change the cursor in the logo.
+  logoCursorColor    = "#67a2c9"
+  # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+  logoCursorAnimate  = "2s"
+
+[params.portrait]
+  path     = "images/profile.jpeg"
+  alt      = "Portrait"
+  maxWidth = "250px"
+
+# Social icons
+[[params.social]]
+  name = "facebook"
+  url = "https://facebook.com/aream2006"
+
+[[params.social]]
+  name = "github"
+  url = "https://github.com/aream2006"
+
+[[params.social]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/aream06"
+
+[[params.social]]
+  name = "reddit"
+  url = "https://www.reddit.com/user/aream06"
+
+[[menu.main]]
+  identifier = "about"
+  name       = "About Me"
+  url        = "/about"
