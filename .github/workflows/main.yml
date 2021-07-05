@@ -29,6 +29,7 @@ jobs:
       - name: add analytics
         run: |
           echo "$(echo -n 'googleAnalytics = "G-LVJ9KVG4XV"\n'; cat config.toml)" > config.toml
+          cat config.toml
 
       - name: build docs
         run: hugo
