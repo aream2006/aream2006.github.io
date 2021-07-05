@@ -23,14 +23,6 @@ jobs:
         with:
             hugo-version: 'latest'
 
-      - name: delete docs
-        run: rm -rf docs
-
-      - name: add analytics
-        run: |
-          echo "$(echo -n 'googleAnalytics = "G-LVJ9KVG4XV"'; echo -n '\n'; cat config.toml)" > config.toml
-          cat config.toml
-
       - name: build docs
         run: hugo
 

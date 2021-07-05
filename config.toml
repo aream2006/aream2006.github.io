@@ -3,6 +3,7 @@ title        = "Alan Ream"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
 paginate     = 10
+googleAnalytics = "G-LVJ9KVG4XV"
 
 [params]
   dateform        = "January 2, 2006"
