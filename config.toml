@@ -3,7 +3,6 @@ title        = "Alan Ream"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
 paginate     = 10
-publishDir   = "../docs"
 
 [params]
   dateform        = "January 2, 2006"
