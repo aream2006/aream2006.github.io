@@ -56,4 +56,3 @@ paginate     = 10
   identifier = "about"
   name       = "About Me"
   url        = "/about"
-
