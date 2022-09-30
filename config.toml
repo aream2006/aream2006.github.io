@@ -1,9 +1,8 @@
-baseurl      = "https://www.totalgeek.info"
+baseurl      = "https://totalgeek.info"
 title        = "Alan Ream"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
 paginate     = 10
-googleAnalytics = "G-LVJ9KVG4XV"
 
 [params]
   dateform        = "January 2, 2006"
@@ -19,6 +18,14 @@ googleAnalytics = "G-LVJ9KVG4XV"
 
   # Enable sharing buttons, if you like
   enableSharingButtons = true
+
+  # Enable theme toggle
+  # 
+  # This options enables the theme toggle for the theme. 
+  # Per default, this option is off. 
+  # The theme is respecting the prefers-color-scheme of the operating systeme. 
+  # With this option on, the page user is able to set the scheme he wants. 
+  enableThemeToggle = true
 
 [params.logo]
   logoMark     = "$"
@@ -38,20 +45,12 @@ googleAnalytics = "G-LVJ9KVG4XV"
 
 # Social icons
 [[params.social]]
-  name = "facebook"
-  url = "https://facebook.com/aream2006"
-
-[[params.social]]
   name = "github"
   url = "https://github.com/aream2006"
 
 [[params.social]]
   name = "linkedin"
   url = "https://linkedin.com/in/aream06"
-
-[[params.social]]
-  name = "reddit"
-  url = "https://www.reddit.com/user/aream06"
 
 [[menu.main]]
   identifier = "about"
