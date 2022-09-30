@@ -7,6 +7,7 @@ I'm a DevOps Engineer in the North Dallas area with almost 10 years of experienc
 
 ## Skills
 * Kubernetes
+* AWS
 * Docker
 * Ansible
 * Github
