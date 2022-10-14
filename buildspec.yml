@@ -5,10 +5,11 @@ phases:
     runtime-versions:
       python: 3.9
     commands:
-      - apt-get update
-      - echo Installing hugo
-      - curl -L -o hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.104.3/hugo_0.104.3_linux-amd64.deb
-      - dpkg -i hugo.deb
+        - wget https://github.com/gohugoio/hugo/releases/download/v${VERSION_HUGO}/hugo_extended_${VERSION_HUGO}_Linux-64bit.tar.gz
+        - tar --overwrite -xf hugo_extended_${VERSION_HUGO}_Linux-64bit.tar.gz hugo
+        - mv hugo /usr/bin/hugo
+        - rm -rf hugo_extended_${VERSION_HUGO}_Linux-64bit.tar.gz
+        - hugo version
   pre_build:
     commands:
       - echo In pre_build phase..
@@ -16,7 +17,7 @@ phases:
       - ls -la
   build:
     commands:
-      - hugo -v
+      - hugo
 artifacts:
   files:
     - '**/*'
