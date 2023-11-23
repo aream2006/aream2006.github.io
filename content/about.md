@@ -12,3 +12,4 @@ I'm a Site Reliability Engineer in the North Dallas area with almost 10 years of
 * Ansible
 * Github
 * Azure DevOps
+* Terraform
